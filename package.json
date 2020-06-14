@@ -1,0 +1,24 @@
+{
+  "name": "s-is-for-store-example",
+  "version": "0.0.0",
+  "description": "A project for demostrating s is for store.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Grant Heath",
+  "license": "MIT",
+  "dependencies": {
+    "@s-is-for-store/react": "^3.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "s-is-for-store": "^3.0.1"
+  },
+  "devDependencies": {
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
