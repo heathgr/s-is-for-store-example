@@ -1,9 +1,8 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const { DefinePlugin } = require('webpack')
 const { join } = require('path')
 
 module.exports = {
-  entry: join(__dirname, 'src/app.ts'),
+  entry: join(__dirname, 'src/app.tsx'),
   devServer: {
     contentBase: join(__dirname, 'static'),
   },
