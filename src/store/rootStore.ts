@@ -1,10 +1,10 @@
 import { createStore } from 's-is-for-store'
 
-interface RootStore {
+export interface RootState {
   count: number,
 }
 
-const initialState: RootStore = {
+export const initialState: RootState = {
   count: 0,
 }
 
