@@ -3,11 +3,16 @@ import React from 'react'
 
 import Root from './Root'
 import * as rootUpdaters from '../updaters/rootUpdaters'
-import store from '../store/rootStore'
+import store, { initialState } from '../store/rootStore'
 import createTestUpdater from '../testHelpers/createTestUpdater'
 
 describe('Root', () => {
   const update = createTestUpdater(store)
+
+  beforeEach(() => {
+    store.unsubscribeAll()
+    store.update(initialState)
+  })
 
   it('Should render', () => {
     const subject = shallow(<Root />)

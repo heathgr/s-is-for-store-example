@@ -3,6 +3,7 @@ import { decrement, increment } from './rootUpdaters'
 
 describe('rootUpdaters', () => {
   beforeEach(() => {
+    store.unsubscribeAll()
     store.update(initialState)
   })
 
