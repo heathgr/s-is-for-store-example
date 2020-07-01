@@ -1,10 +1,10 @@
 import { shallow, mount } from 'enzyme'
 import React from 'react'
+import { createTestUpdater } from '@s-is-for-store/react/lib/test-utils'
 
 import Root from './Root'
 import * as rootUpdaters from '../updaters/rootUpdaters'
 import store, { initialState } from '../store/rootStore'
-import createTestUpdater from '../testHelpers/createTestUpdater'
 
 describe('Root', () => {
   const update = createTestUpdater(store)
