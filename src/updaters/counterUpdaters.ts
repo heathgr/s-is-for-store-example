@@ -1,4 +1,4 @@
-import store from '../store/rootStore'
+import store from '../store/counterStore'
 
 export const increment = (): void => {
   const { count } = store.current()

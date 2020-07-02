@@ -1,9 +1,9 @@
 import React, { FC } from 'react'
 import { useStore } from '@s-is-for-store/react'
-import store from '../store/rootStore'
-import { decrement, increment } from '../updaters/rootUpdaters'
+import store from '../store/counterStore'
+import { decrement, increment } from '../updaters/counterUpdaters'
 
-const App: FC = () => {
+const Counter: FC = () => {
   const state = useStore(store)
   const { count } = state
 
@@ -30,4 +30,4 @@ const App: FC = () => {
   )
 }
 
-export default App
+export default Counter

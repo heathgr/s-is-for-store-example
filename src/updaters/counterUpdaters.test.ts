@@ -1,7 +1,7 @@
-import store, { initialState } from '../store/rootStore'
-import { decrement, increment } from './rootUpdaters'
+import store, { initialState } from '../store/counterStore'
+import { decrement, increment } from './counterUpdaters'
 
-describe('rootUpdaters', () => {
+describe('counterUpdaters', () => {
   beforeEach(() => {
     store.unsubscribeAll()
     store.update(initialState)
